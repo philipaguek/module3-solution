@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food, LLC Menu</title>
+    <!-- Bootstrap 3.3.7 CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+     <!-- Anchor for Scroll Target -->
+     <a id="top"></a>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- Company Name -->
+                <a class="navbar-brand" href="#">Food, LLC</a>
+                <!-- Mobile Menu Button -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Navbar Menu Items (Mobile View Only) -->
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right visible-xs">
+                    <!-- Mobile Menu Items -->
+                    <li><a href="#chicken">Chicken</a></li>
+                    <li><a href="#beef">Beef</a></li>
+                    <li><a href="#sushi">Sushi</a></li>
+                </ul>
+            </div>
+
+            <!-- Navbar Brand (Visible on md and larger screens only) -->
+            <div class="hidden-xs">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- Empty for desktop and tablet views (no other items visible) -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Heading -->
+    <div class="text-center">
+        <h1>Our Menu</h1>
+    </div>
+
+     <!-- Menu Sections with Descriptions -->
+    <section class="menu-section" id="menu-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 id="chicken">Chicken Dishes</h2>
+                    <p>Our chicken dishes are prepared using only the finest, tender cuts of chicken. Each dish is carefully seasoned with a variety of herbs and spices to bring out the rich flavors and create a truly mouthwatering experience. Whether you prefer it grilled, fried, or roasted, we have something for every chicken lover!</p>
+                    <ul>
+                        <li>Grilled Chicken: Tender and juicy chicken breast, grilled to perfection with a smoky finish.</li>
+                        <li>Fried Chicken: Crispy on the outside, juicy on the inside, our fried chicken is a crowd favorite.</li>
+                        <li>Roast Chicken: A flavorful whole chicken slow-roasted to golden perfection with a blend of herbs and spices.</li>
+                    </ul>
+
+                    <h2 id="beef">Beef Dishes</h2>
+                    <p>Our beef dishes are crafted with the finest cuts of meat to provide a savory, satisfying experience. From juicy steaks to hearty beef stews, our beef menu is designed for those who crave a flavorful, filling meal. Each dish is prepared with care and attention to detail.</p>
+                    <ul>
+                        <li>Grilled Steak: Perfectly seared steak, served with your choice of side dish and sauces.</li>
+                        <li>Beef Stew: A rich and hearty stew made with tender chunks of beef, root vegetables, and a savory broth.</li>
+                        <li>Beef Burger: A deliciously juicy beef patty grilled to perfection and served with all the classic toppings.</li>
+                    </ul>
+
+                    <h2 id="sushi">Sushi</h2>
+                    <p>Our sushi menu features the freshest seafood, hand-picked from local suppliers to ensure the highest quality. From classic nigiri to creative rolls, our sushi selection will take your taste buds on a journey through Japan's finest flavors.</p>
+                    <ul>
+                        <li>California Roll: A mix of crab meat, avocado, and cucumber, rolled in seaweed and rice.</li>
+                        <li>Sashimi: Fresh slices of raw fish served with soy sauce, wasabi, and pickled ginger.</li>
+                        <li>Tempura Roll: A crispy roll filled with shrimp tempura, avocado, and a spicy mayo sauce.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Back to Top Button -->
+     <a href="#top" class="back-to-top" id="back-to-top" title="Back to top">
+        ↑
+    </a>
+    
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+        // Toggle Mobile Menu
+        $('.navbar-toggle').click(function() {
+            $('#navbar-collapse').toggleClass('collapse');
+        });
+    </script>
+
+</body>
+</html>

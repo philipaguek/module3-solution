@@ -1,0 +1,174 @@
+/* Global Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    padding-top: 0px; /* Add extra padding for a cleaner look */
+    color: #4e4e4e; /* Soft dark text */
+}
+
+/* Navbar Customization */
+.navbar {
+    margin-bottom: 0;
+    background-color: #c0392b; /* Rich red background for navbar */
+    border: 2px solid black;
+}
+
+/* Navbar Brand (Restaurant Name) Styling */
+.navbar-brand {
+    color: #ecf0f1 !important; /* White color for the brand */
+    font-family: 'Lucida Sans', sans-serif; /* Modern, readable font */
+    font-size: 1.8em;
+    letter-spacing: 1px;
+}
+
+/* Navbar Menu Items */
+.navbar-nav > li > a {
+    color: #ecf0f1 !important; /* White color for the navbar items */
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/* Hover effect for navbar items */
+.navbar-nav > li > a:hover {
+    color: #f1c40f !important; /* Yellow hover effect to highlight items */
+}
+
+/* Mobile Menu Customization */
+#mobile-menu {
+    background-color: #d35400; /* Warm orange background for dropdown */
+    color: white;
+    width: 100%;
+    text-align: center; /* Centering text in the mobile menu */
+}
+
+/* Mobile Menu Text Styling */
+#mobile-menu a {
+    color: white; /* White text for readability */
+    text-decoration: none;
+    padding: 15px;
+    font-size: 1.2em;
+    display: block;
+}
+
+/* Hover effect for links in mobile menu */
+#mobile-menu a:hover {
+    background-color: #e67e22; /* Slightly lighter orange on hover */
+}
+
+/* Tall Section Styling */
+.menu-section {
+    background-color: #f2e2b6; /* Soft cream background for a warm, welcoming feel */
+    padding: 40px 0;
+    color: #4e4e4e;
+    font-family: 'Georgia', serif;
+    text-align: left;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+/* Page Heading Styling */
+h1 {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    color: #2c3e50;
+    padding: 20px 0;
+    font-size: 3em;
+}
+
+/* Subheading for each section */
+h2 {
+    font-family: 'Georgia', serif;
+    font-size: 2em;
+    margin-top: 30px;
+    color: #2c3e50;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Styling for the list items under each section */
+ul {
+    text-align: left;
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin: 20px auto;
+    padding-left: 20px;
+}
+
+/* Styling for individual list items */
+li {
+    margin-bottom: 10px;
+}
+
+/* Add some spacing between content sections */
+p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #5d5d5d;
+}
+/* Make the navbar and mobile menu responsive */
+@media (max-width: 767px) {
+    /* Mobile view adjustments */
+    .navbar-collapse {
+        text-align: center; /* Center the menu items in mobile view */
+    }
+
+    .navbar-nav {
+        width: 100%; /* Ensure the navbar items stretch across */
+    }
+
+    /* Ensure the navbar items are visible on mobile */
+    .visible-xs {
+        display: block !important;
+    }
+
+    /* Hide navbar items on larger screens (desktop, tablet) */
+    .hidden-xs {
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px) {
+    /* Tablet and Desktop */
+    /* Hide the mobile menu button and mobile dropdown items */
+    .navbar-toggle {
+        display: none;
+    }
+
+    .navbar-collapse {
+        display: none;
+    }
+}
+
+/* Scroll-to-Top Button Styling */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #c0392b; /* Background color matching the navbar */
+    color: white;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    z-index: 999;
+    text-decoration: none; /* Remove underline */
+}
+
+/* Make the button visible when scrolled */
+body:has(:target) #back-to-top {
+    display: block;
+}
+
+/* Hover effect for Back to Top button */
+#back-to-top:hover {
+    background-color: #e67e22; /* Lighter color on hover */
+}
+
+/* Smooth scrolling effect for anchor link */
+html {
+    scroll-behavior: smooth;
+}
